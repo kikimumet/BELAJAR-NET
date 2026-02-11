@@ -1,6 +1,85 @@
 ﻿@{
-    ViewData["Title"] = "Privacy Policy";
+    ViewData["Title"] = "Kebijakan Privasi";
 }
-<h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+<div class="container py-5">
+    <div class="text-center mb-5">
+        <div class="d-inline-flex align-items-center justify-content-center bg-primary bg-opacity-10 text-primary rounded-circle mb-3" style="width: 80px; height: 80px;">
+            <i class="bi bi-shield-lock-fill fs-1"></i>
+        </div>
+        <h1 class="fw-bold">Kebijakan Privasi & Keamanan</h1>
+        <p class="text-muted col-lg-8 mx-auto">
+            Komitmen kami untuk melindungi data dan menjaga integritas informasi aset kendaraan di lingkungan AHM IT.
+        </p>
+    </div>
+
+    <div class="row g-4">
+        <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm hover-shadow transition">
+                <div class="card-body p-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="bg-success text-white rounded p-2 me-3">
+                            <i class="bi bi-database-check"></i>
+                        </div>
+                        <h5 class="card-title mb-0 fw-bold">Pengumpulan Data</h5>
+                    </div>
+                    <p class="card-text text-muted small">
+                        Aplikasi ini hanya mencatat data teknis kendaraan (Nama, Jenis, dan ID) untuk keperluan inventaris internal. Tidak ada data pribadi sensitif karyawan yang disimpan tanpa izin.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm hover-shadow transition">
+                <div class="card-body p-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="bg-info text-white rounded p-2 me-3">
+                            <i class="bi bi-graph-up-arrow"></i>
+                        </div>
+                        <h5 class="card-title mb-0 fw-bold">Tujuan Penggunaan</h5>
+                    </div>
+                    <p class="card-text text-muted small">
+                        Data digunakan semata-mata untuk manajemen aset, pemantauan ketersediaan unit, dan pelaporan status kendaraan operasional perusahaan.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm hover-shadow transition">
+                <div class="card-body p-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="bg-warning text-white rounded p-2 me-3">
+                            <i class="bi bi-lock-fill"></i>
+                        </div>
+                        <h5 class="card-title mb-0 fw-bold">Keamanan Penyimpanan</h5>
+                    </div>
+                    <p class="card-text text-muted small">
+                        Database (SQLite) disimpan secara lokal dalam lingkungan yang terisolasi. Akses terhadap data dibatasi hanya untuk personel yang berwenang.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm hover-shadow transition">
+                <div class="card-body p-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="bg-danger text-white rounded p-2 me-3">
+                            <i class="bi bi-envelope-paper-heart-fill"></i>
+                        </div>
+                        <h5 class="card-title mb-0 fw-bold">Hubungi Admin</h5>
+                    </div>
+                    <p class="card-text text-muted small">
+                        Jika menemukan ketidaksesuaian data atau bug pada aplikasi, silakan hubungi tim IT Support melalui email internal atau tiket bantuan.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="text-center mt-5 text-muted small">
+        &copy; 2026 AHM IT Division - Secure System Environment
+    </div>
+</div>

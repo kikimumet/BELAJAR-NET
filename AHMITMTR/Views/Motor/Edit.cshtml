@@ -1,0 +1,29 @@
+@model AHMITMTR.Models.Motor
+
+<h2>Edit Data Motor</h2>
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <input type="hidden" asp-for="NID" />
+
+            <div class="form-group mb-3">
+                <label>Nama Motor</label>
+                <input asp-for="VNAMAMOTOR" class="form-control" />
+                <span asp-validation-for="VNAMAMOTOR" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label>Jenis Motor</label>
+                <select asp-for="VJENIS" class="form-control">
+                    <option value="Matic">Matic</option>
+                    <option value="Bebek">Bebek</option>
+                    <option value="Sport">Sport</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-warning">Update</button>
+            <a asp-action="Index" class="btn btn-secondary">Batal</a>
+        </form>
+    </div>
+</div>

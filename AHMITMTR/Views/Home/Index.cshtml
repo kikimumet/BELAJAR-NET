@@ -1,8 +1,36 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Dashboard";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="p-5 mb-4 bg-light rounded-3 shadow-sm text-center">
+    <div class="container-fluid py-3">
+        <h1 class="display-5 fw-bold text-primary">Sistem Manajemen Motor</h1>
+        <p class="col-md-8 fs-4 mx-auto text-muted">
+            Selamat datang di aplikasi pengelolaan data kendaraan AHM IT. 
+            Sistem ini memudahkan Anda untuk mendata, mengubah, dan memonitor aset kendaraan secara efisien.
+        </p>
+        <a asp-controller="Motor" asp-action="Index" class="btn btn-primary btn-lg px-4 mt-3 rounded-pill shadow">
+            <i class="bi bi-arrow-right-circle me-2"></i> Kelola Data Motor
+        </a>
+    </div>
+</div>
+
+<div class="row align-items-md-stretch">
+    <div class="col-md-6 mb-3">
+        <div class="h-100 p-5 text-white bg-dark rounded-3 shadow">
+            <h2 class="mb-3"><i class="bi bi-collection-fill me-2"></i> Master Data</h2>
+            <p>Akses data lengkap kendaraan, lakukan pencarian, atau tambahkan unit baru ke dalam database.</p>
+            <a asp-controller="Motor" asp-action="Index" class="btn btn-outline-light" type="button">
+                Buka Tabel Motor
+            </a>
+        </div>
+    </div>
+
+    <div class="col-md-6 mb-3">
+        <div class="h-100 p-5 bg-white border rounded-3 shadow-sm">
+            <h2 class="text-secondary"><i class="bi bi-info-circle-fill me-2"></i> Informasi Sistem</h2>
+            <p>Sistem ini menggunakan teknologi terbaru .NET Core MVC dengan database SQLite yang ringan dan cepat. Dikembangkan untuk efisiensi operasional.</p>
+            <button class="btn btn-outline-secondary" type="button" disabled>Versi 1.0.0</button>
+        </div>
+    </div>
 </div>
